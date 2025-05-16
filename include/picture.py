@@ -414,7 +414,6 @@ def annotate_image(image_path, points, adjacency_list, output_path, point_color=
 
 def draw_circles_on_image(image_path,data:dict,savepath,title,bestpoint):
     # 读取图片
-    image_path = 'pic\graph_getting.jpg'
     img = Image.open(image_path)
     img_array = np.array(img)
 

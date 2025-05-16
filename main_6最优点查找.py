@@ -18,6 +18,6 @@ for i in range(4):
             min_point[0], min_point[1] = k[0], k[1]
             min_value = v
     final_pic_path = file_path[i].replace("data_processed/","").replace("txt","png")
-    draw_circles_on_image("pic\graph_getting_result.jpg",dist_list,f"pic/heatmap {final_pic_path}",title[i],min_point)
+    draw_circles_on_image("pic/road_result.jpg",dist_list,f"pic/heatmap_{final_pic_path}",title[i],min_point)
     print(f"{file_path[i]}最优点为：",min_value,min_point)
     
